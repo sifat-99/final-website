@@ -522,7 +522,6 @@
 
 /* all sponsor section style */
 .boxes {
-    display: flex;
     align-items: center;
     /* border: 1px solid red; */
     border-radius: 50px;
@@ -532,6 +531,7 @@
     color: #0B0223;
     font-size: 1rem;
     font-weight: 600;
+    display: inline-flex;
     /* flex-wrap: nowrap; */
 }
 
@@ -543,23 +543,31 @@
     -webkit-text-fill-color: transparent;
 }
 
+/* .all-sponsors
+{
+    grid-area: ;
+} */
 .all-sponsors {
     padding: 120px 150px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    justify-content: center;
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
+    justify-content: center;
+    /* display: grid;
+    grid-template-columns: repeat(5,1fr); */
+    /* grid-template-columns: auto auto auto auto ; */
+    /* grid-template-rows: repeat(2,1fr); */
+    /* justify-content: space-evenly; */
+    justify-items: center;
+    /* align-content: space-evenly; */
+    align-items: center;
     gap: 47px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
+/* .box-span
+{
+    grid-column: 1/span 2;
+} */
 
-.parent {
-    /* border: 2px solid salmon; */
-    width: 100%;
-}
+
 
 /* footer section */
 footer {
@@ -787,11 +795,25 @@ footer {
         text-align: justify;
         width: 100%;
     }
-
+    .boxes>img
+    {
+        width: 30%;
+    }
+    .boxes>p{
+        font-size:6px;
+        /* font-weight: 900; */
+    }
+    .boxes
+    {
+        width: 100%;
+        display: inline-flex;
+    }
     .all-sponsors {
         padding: 0px 20px;
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(3, 0fr);
+        justify-content: space-around;
+        gap: 10px 0px;
     }
 
     footer {
@@ -808,6 +830,10 @@ footer {
 }
 
 @media screen and (min-width: 576.2px) and (max-width: 990px) {
+    *
+    {
+        margin-right: 1px;
+    }
 
     .nav-container,
     .nav-right {
@@ -958,4 +984,34 @@ footer {
         text-align: justify;
         width: 100%;
     }
+
+
+.boxes>img
+{
+    width: 50%;
+}
+.boxes>p{
+    font-size:12px;
+    /* font-weight: 900; */
+}
+.boxes
+{
+    width: max-content;
+    display: inline-flex;
+}
+.all-sponsors {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    padding: 0px 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    justify-content: space-around;
+    gap: 10px 0px;
+}
+.footer-container {
+
+    padding: 20px 40px;
+    margin: 0px 0px;
+}
 }
