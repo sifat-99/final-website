@@ -365,7 +365,7 @@
     font-weight: 500;
     line-height: 30px;
 }
-
+/* Play instant section */
 .play-instant-picture {
     /* border: 2px solid black; */
     width: 100%;
@@ -437,7 +437,7 @@
 .two {
     text-align: left;
 }
-
+/* used for overlay picture */
 .overlay-pic-size {
     /* display: flex;
     justify-content: ;
@@ -488,7 +488,7 @@
     line-height: 60px;
     padding-bottom: 24px;
 }
-
+/* for career description */
 .career-description {
     width: 680px;
     color: #FFF;
@@ -521,7 +521,7 @@
     text-align: right;
     padding-right: 20px;
 }
-
+/* for see all button */
 .see-all-btn {
     margin-top: 61px;
     padding: 21px 40px;
@@ -569,6 +569,8 @@
 {
     grid-area: ;
 } */
+
+/* all-sponsors section  */
 .all-sponsors {
     padding: 120px 150px;
     display: inline-flex;
@@ -610,7 +612,7 @@ footer {
     align-items: center;
     cursor: pointer;
 }
-
+/* copyright section */
 .copyright-footer {
     color: rgba(255, 255, 255, 0.60);
     text-align: center;
@@ -619,13 +621,14 @@ footer {
     font-weight: 500;
     line-height: normal;
 }
-
+/* Footer last line data */
 .topic-data>li {
     color: #FFF;
     text-decoration: none;
     list-style: none;
 }
 
+/* G and Amer Different style */
 .amer {
     color: #FFF;
     font-size: 2.8rem;
